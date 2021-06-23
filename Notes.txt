@@ -1,0 +1,53 @@
+1. created new repo in github, then got a http address
+2. created db.js
+
+NPM
+1. npm init -y (creates package.json)
+
+GIT
+3. npm git init (not necessary)
+4. echo node_modules.>>.gitignore
+4. git add .
+5. git commit -m 'first try'
+6. git push
+
+PSQL
+1. sudo service postgresql start
+2. createdb toDoDb
+
+DB
+1. db.js
+2. node db.js
+
+MODULES
+1. exports.syncAndSeed = syncAndSeed
+2. const syncAndSeed = require('/db')
+
+DIFFICULTIES
+1. how to turn src/index.js file into dist/server.js file?
+2. how to transform server get requests to react?
+
+WHAT I DID ON COMMAND LINE
+1. npm install --save-dev webpack
+2. added in package.json (build:webpack)
+3. webpack is located in nodemodules/bin/ls
+
+//TERMINAL
+// npm i faker
+// npm run start:dev
+// npm i webpack webpack-cli --save-dev
+// touch webpack.config.js
+// npm i react react-dom babel-loader @babel/core @babel/preset-react --save-dev
+// echo node_modules >> .gitignore
+// echo dist >> .gitignore
+// git add .
+// git commit -m 'first commit'
+
+// build:webpack
+// build:dev npm run build -- --mode=development --watch
+// start:dev nodemon server.js --ignore dist/ --ignore src/ & npm run build:dev
+// npm i axios --save-dev
+
+//34:19
+
+src/index.js ==> dist/main.js
